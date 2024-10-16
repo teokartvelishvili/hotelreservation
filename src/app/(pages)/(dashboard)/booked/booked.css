@@ -1,0 +1,30 @@
+
+.booked-main {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .booked-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .booked-table th, .booked-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .booked-table th {
+    background-color: #f4f4f4;
+  }
+  
+  button {
+    padding: 5px 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
