@@ -1,6 +1,6 @@
 "use client";
 import { useParams } from "next/navigation";
-import hotelsData from "../../../../../components/data/hotelsData";
+import hotelsData from "../../../../../components/data/hotelsData.js";
 import "./rooms.css";
 
 export default function RoomsPage() {
@@ -25,7 +25,7 @@ export default function RoomsPage() {
             className={`room-card ${room.status === "available" ? "available" : "booked"}`}
             key={room.id}
           >
-            <img src={room.image} alt={room.type} />
+            <img src={room.image} alt={room.type} className="room-image" />
             <h2>{room.type}</h2>
             <p>ფასი: {room.price}₾</p>
             <p>Status: {room.status === "available" ? "თავისუფალი" : "დაკავებული"}</p>
